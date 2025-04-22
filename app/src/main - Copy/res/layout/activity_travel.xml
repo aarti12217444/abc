@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ViewFlipper
+        android:id="@+id/travelFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:autoStart="true"
+        android:flipInterval="3000"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out"/>
+
+    <TextView
+        android:id="@+id/captionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Caption"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/travelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel heals the soul ✈️🌍"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back 🔙"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

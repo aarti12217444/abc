@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_7"
+    tools:context=".MainActivity">
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to MindCheck!"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Name -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Enter Name"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <!-- Age -->
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Enter Age"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Buttons -->
+    <Button android:id="@+id/btnAddData" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Add Data"
+        app:layout_constraintTop_toBottomOf="@id/editTextAge"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button android:id="@+id/btnFetchData" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Fetch Data"
+        app:layout_constraintTop_toBottomOf="@id/btnAddData"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button android:id="@+id/btnUpdateData" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Update Data"
+        app:layout_constraintTop_toBottomOf="@id/btnFetchData"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button android:id="@+id/btnDeleteData" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Delete Data"
+        app:layout_constraintTop_toBottomOf="@id/btnUpdateData"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button android:id="@+id/btnMoodTracker" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Mood Tracker"
+        app:layout_constraintTop_toBottomOf="@id/btnDeleteData"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button android:id="@+id/btnSelfAssessment" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Self-Assessment Quiz"
+        app:layout_constraintTop_toBottomOf="@id/btnMoodTracker"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button android:id="@+id/btnFitnessResources" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Fitness Resources"
+        app:layout_constraintTop_toBottomOf="@id/btnSelfAssessment"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button android:id="@+id/btnQuiz" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Take Quiz"
+        app:layout_constraintTop_toBottomOf="@id/btnFitnessResources"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button android:id="@+id/btnToggleLanguage" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Switch to Hindi"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnQuiz"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

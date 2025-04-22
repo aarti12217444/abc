@@ -1,0 +1,189 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/img_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- Question Section for Quiz -->
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question will appear here"
+            android:textSize="18sp"
+            android:paddingBottom="12dp"
+            android:textColor="@android:color/black" />
+
+        <RadioGroup
+            android:id="@+id/optionsGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:background="@color/button_background"
+            android:padding="16dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- 🧘‍♀️ Wellness Activities Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="20dp"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏋️ Fitness Activities"
+                    android:textSize="18sp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@android:color/black" />
+
+                <Button android:id="@+id/dancingButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎶 Dancing"
+                    android:textColor="@android:color/black" />
+
+                <Button android:id="@+id/singingButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎤 Singing"
+                    android:textColor="@android:color/black" />
+
+                <Button android:id="@+id/paintingButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎨 Painting"
+                    android:textColor="@android:color/black" />
+
+                <Button android:id="@+id/travelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✈️ Traveling and Tours"
+                    android:textColor="@android:color/black" />
+
+                <!-- New Button for Bhajan Listening -->
+                <Button android:id="@+id/bhajanButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🙏 Bhajan Listening"
+                    android:textColor="@android:color/black" />
+
+                <!-- New Button for Temple Search -->
+                <Button android:id="@+id/templeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏛️ Find Nearby Temples"
+                    android:textColor="@android:color/black" />
+
+                <!-- New Button for Family Time -->
+                <Button android:id="@+id/familyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👨‍👩‍👧‍👦 Family Time"
+                    android:textColor="@android:color/black" />
+
+                <!-- Tip Section (Interactive) -->
+                <TextView
+                    android:id="@+id/tipTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:padding="16dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🕰️ New CardView for Alarm, Notification, Tips, and Progress -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="24dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⏰ More Features"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingBottom="8dp" />
+
+                <!-- Alarm and Notification Buttons -->
+                <Button
+                    android:id="@+id/alarmButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⏰ Set Alarm"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/alarmReminderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔔 Set Alarm Reminder"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="12dp"/>
+
+                <Button
+                    android:id="@+id/notificationButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔔 Notification"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/tipsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💡 Daily Tips"
+                    android:textColor="@android:color/black" />
+
+                <!-- Progress Bar for Fitness Progress -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:indeterminate="false"
+                    android:progress="50"
+                    android:max="100"
+                    style="@android:style/Widget.ProgressBar.Horizontal" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

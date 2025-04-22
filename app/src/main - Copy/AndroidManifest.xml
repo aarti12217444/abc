@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Abc"
+        tools:targetApi="31">
+
+        <!-- ✅ LoginActivity as Launcher Activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+<!--                <receiver android:name=".AlarmReceiver" />-->
+
+            </intent-filter>
+        </activity>
+
+        <!-- ✅ MainActivity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- ✅ Mood Tracker Activity -->
+        <activity android:name=".MoodTrackerActivity"
+            android:exported="true" />
+
+        <!-- ✅ Self-Assessment Activity -->
+        <activity android:name=".SelfAssessmentActivity"
+            android:exported="true" />
+
+        <!-- ✅ Fitness Activity -->
+        <activity android:name=".FitnessActivity"
+            android:exported="true" />
+
+        <!-- ✅ Quiz Activity (Newly Added) -->
+        <activity android:name=".QuizActivity"
+            android:exported="true" />
+
+        <activity android:name=".AddDataActivity"
+            android:exported="true" />
+
+        <activity android:name=".DeleteDataActivity"
+            android:exported="true" />
+
+        <activity android:name=".FetchDataActivity"
+            android:exported="true" />
+
+        <activity android:name=".UpdateDataActivity"
+            android:exported="true" />
+
+        <activity android:name=".PaintingActivity"
+            android:exported="true" />
+
+        <activity android:name=".TravelActivity"
+            android:exported="true" />
+
+        <activity android:name=".BhajanActivity"
+            android:exported="true" />
+
+        <receiver android:name=".AlarmReceiver"
+            android:exported="true"/>
+
+        <activity android:name=".AlarmActivity"
+            android:exported="true"/>
+
+        <activity android:name=".NotificationActivity"
+            android:exported="true"/>
+
+        <activity android:name=".TipsActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ProgressBarActivity"
+            android:exported="true"/>
+        <!-- ✅ Correct receiver declaration -->
+        <receiver android:name=".AlarmReceiver" android:exported="true"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/radheButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎵 Radhe Radhe"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/ramButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🕉️ Ram Ram"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/shivButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔱 Shiv Tandav"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/hanumanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚩 Hanuman Chalisa"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+
+        <Button
+            android:id="@+id/waheguruButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🙏 Waheguru"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/allahButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="☪️ Allah"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+</ScrollView>

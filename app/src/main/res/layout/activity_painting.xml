@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ViewFlipper
+        android:id="@+id/paintingFlipper"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:autoStart="true"
+        android:flipInterval="2000" />
+
+    <TextView
+        android:id="@+id/paintingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Painting is relaxing! 🎨🖌️"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back 🔙"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

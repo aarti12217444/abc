@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/img_14"
+    android:padding="16dp">
+
+    <!-- Question TextView with Red Color -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How are you feeling today?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        tools:ignore="NewApi" />
+
+    <!-- RadioGroup for Mood Options -->
+    <RadioGroup
+        android:id="@+id/moodRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/happyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😊 Happy"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/sadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😢 Sad"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/angryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😡 Angry"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/stressedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😰 Stressed"
+            android:textColor="#000000"/>
+    </RadioGroup>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitMoodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Mood"
+        android:layout_marginTop="10dp"/>
+
+    <!-- ListView for displaying moods -->
+    <ListView
+        android:id="@+id/moodListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
