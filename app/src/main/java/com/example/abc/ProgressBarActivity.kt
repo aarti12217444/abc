@@ -23,6 +23,7 @@ class ProgressBarActivity : AppCompatActivity() {
         progressText = findViewById(R.id.progressText)
 
         Thread {
+
             while (progressStatus < 100) {
                 progressStatus += 1
                 handler.post {

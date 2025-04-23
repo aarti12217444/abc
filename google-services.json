@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "716013848641",
+    "project_id": "moodcheckerabc",
+    "storage_bucket": "moodcheckerabc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716013848641:android:ce143bf5a04485abe95ec0",
+        "android_client_info": {
+          "package_name": "com.example.abc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFj5MdkVvvHwkRpJDJ8KiQTm2qzXPJmB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
